@@ -13,6 +13,11 @@ use Spatie\QueryBuilder\QueryBuilder;
 
 class TaskController extends Controller
 {
+    public function __construc()
+    {
+        $this->authorizeResource(Task::class, 'task');
+    }
+
     public function index()
     {
         $tasks = QueryBuilder::for(Task::class)
@@ -51,4 +56,5 @@ class TaskController extends Controller
 
         return response()->noContent();
     }
+
 }

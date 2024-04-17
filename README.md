@@ -1,2 +1,5 @@
 # API task manager laravel
-API for managing tasks and projects with user roles 
+API for managing tasks for project administration
+
+## License 
+[MIT](./LICENSE.md)
